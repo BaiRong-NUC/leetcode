@@ -9,7 +9,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "E:\\leetcode\\leetcode_exe_buff\\${fileBasenameNoExtension}.exe"
+                "D:\\leetcode\\leetcode_exe_buff\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "D:/mingw/mingw64/bin/g++.exe"
@@ -28,7 +28,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "E:\\leetcode\\leetcode_exe_buff\\${fileBasenameNoExtension}.exe"
+                "D:\\leetcode\\leetcode_exe_buff\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
