@@ -30,7 +30,7 @@
       "preLaunchTask": "g++.exe build active file",
       "type": "cppdbg",
       "request": "launch",
-      "program": "D:\\leetcode\\leetcode_exe_buff\\${fileBasenameNoExtension}.exe",
+      "program": "D:\\leetcode\\leetcode_exe_debug\\${fileBasenameNoExtension}.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
