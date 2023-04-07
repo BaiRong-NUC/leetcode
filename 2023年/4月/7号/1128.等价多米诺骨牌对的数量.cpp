@@ -7,6 +7,9 @@
 #include <vector>
 #include <algorithm>
 #include <assert.h>
+#include <iostream>
+#include <stdlib.h>
+#include <unordered_set>
 
 using namespace std;
 
@@ -22,7 +25,6 @@ public:
     int n;
     UF(int _n) : n(_n), parent(_n), size(_n, 0)
     {
-        iota(parent.begin(), parent.end(), 0);
         for (int i = 1; i <= 9; i++)
         {
             for (int j = 1; j <= 9; j++)
