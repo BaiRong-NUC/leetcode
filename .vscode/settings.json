@@ -75,6 +75,7 @@
     "thread": "cpp",
     "typeindex": "cpp",
     "valarray": "cpp",
-    "stack": "cpp"
+    "stack": "cpp",
+    "strstream": "cpp"
   }
 }
