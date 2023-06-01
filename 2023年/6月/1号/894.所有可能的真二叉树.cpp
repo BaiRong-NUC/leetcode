@@ -16,6 +16,12 @@ struct TreeNode
 #include <vector>
 #include <unordered_map>
 using namespace std;
+/**
+Accepted
+20/20 cases passed (80 ms)
+Your runtime beats 86.75 % of cpp submissions
+Your memory usage beats 84.23 % of cpp submissions (27.4 MB)
+ */
 
 // @lc code=start
 /**
