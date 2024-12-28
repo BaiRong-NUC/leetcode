@@ -9,7 +9,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "D:\\leetcode\\leetcode_exe_debug\\${fileBasenameNoExtension}.exe"
+                "D:\\CppCode\\leetcode\\leetcode_exe_debug\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "C:\\MinGW\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe"
@@ -28,7 +28,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "D:\\leetcode\\leetcode_exe_debug\\${fileBasenameNoExtension}.exe"
+                "D:\\CppCode\\leetcode\\leetcode_exe_debug\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
