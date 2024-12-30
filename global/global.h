@@ -1,11 +1,11 @@
 /**
  * C++刷题常见头文件包含
  */
-#include<iostream>
-#include<vector>
-#include<string>
-#include<algorithm>
-#include<unordered_map>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <unordered_map>
 #include <stack>
 #include <queue>
 #include <unordered_set>
@@ -20,13 +20,14 @@ struct TreeNode
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-struct ListNode {
+struct ListNode
+{
     int val;
     ListNode *next;
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-//二叉树打印函数方便测试
+// 二叉树打印函数方便测试
 class PrintCur
 {
     int deep(TreeNode *root)
@@ -73,27 +74,33 @@ public:
     }
     void printVecter(vector<int> &buff)
     {
-        for(auto&num:buff){
-            cout<<num<<" ";
+        for (auto &num : buff)
+        {
+            cout << num << " ";
         }
         cout << endl;
     }
 
-    void printVecter(vector<vector<int>> &buff){
-        for(int row=0;row<buff.size();row++){
-            for(int col=0;col<buff[row].size();col++){
-                cout<<buff[row][col]<<" ";
+    void printVecter(vector<vector<int>> &buff)
+    {
+        for (int row = 0; row < buff.size(); row++)
+        {
+            for (int col = 0; col < buff[row].size(); col++)
+            {
+                cout << buff[row][col] << " ";
             }
-            cout<<endl;
+            cout << endl;
         }
         cout << endl;
     }
 
-    void printList(ListNode *head){
-        while(head!=nullptr){
-            cout<<head->val<<" ";
-            head=head->next;
+    void printList(ListNode *head)
+    {
+        while (head != nullptr)
+        {
+            cout << head->val << " ";
+            head = head->next;
         }
-        cout<<endl;
+        cout << endl;
     }
 };
