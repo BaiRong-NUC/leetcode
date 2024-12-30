@@ -6,6 +6,7 @@
 #include<string>
 #include<algorithm>
 #include<unordered_map>
+#include <stack>
 using namespace std;
 struct TreeNode
 {
