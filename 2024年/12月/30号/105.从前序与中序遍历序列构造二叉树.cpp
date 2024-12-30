@@ -3,7 +3,7 @@
  *
  * [105] 从前序与中序遍历序列构造二叉树
  */
-#include <./global/global.h>
+#include <D:\CppCode\leetcode\global\global.h>
 // @lc code=start
 /**
  * Definition for a binary tree node.
@@ -45,3 +45,10 @@ public:
 };
 // @lc code=end
 
+int main(int argc, char const *argv[])
+{
+    vector<int>preorder={3,9,20,15,7};
+    vector<int> inorder = {9, 3, 15, 20, 7};
+    PrintCur().printTree(Solution().buildTree(preorder, inorder));
+    return 0;
+}
