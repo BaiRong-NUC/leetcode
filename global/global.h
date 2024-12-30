@@ -88,4 +88,12 @@ public:
         }
         cout << endl;
     }
+
+    void printList(ListNode *head){
+        while(head!=nullptr){
+            cout<<head->val<<" ";
+            head=head->next;
+        }
+        cout<<endl;
+    }
 };
