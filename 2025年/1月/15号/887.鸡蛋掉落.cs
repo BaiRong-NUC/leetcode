@@ -7,6 +7,8 @@
 // @lc code=start
 public class Solution
 {
+    //递归+记忆动态规划超时
+    #region 
     //字典记录已经计算过的结果
     Dictionary<string, int> memo = new Dictionary<string, int>();
 
@@ -37,10 +39,58 @@ public class Solution
         }
 
     }
+    #endregion
+
+    //二分法优化线性搜索超时
+    #region 
+    //利用二分法代替线性搜索
+    public int _DpHalfSearch(int k, int n)
+    {
+        if (n == 0) { return 0; }
+        if (k == 1) { return n; }
+        string key = k.ToString() + n.ToString();
+        if (memo.ContainsKey(key))
+        {
+            return memo[key];
+        }
+        else
+        {
+            //交点处就能保证这两个函数的最大值最小
+            int res = int.MaxValue;
+            int left = 1; int right = n; //[left,right]
+            while (left <= right)
+            {
+                int mid = left + (right - left) / 2; //防止溢出
+                int broken = dp(k - 1, mid - 1); //碎了
+                int notBroken = dp(k, n - mid); //没碎
+                if (broken > notBroken)//两函数交点在mid左边
+                {
+                    right = mid - 1;
+                    res = Math.Min(res, broken + 1);
+                }
+                else if (broken < notBroken)//两函数交点在mid右边
+                {
+                    left = mid + 1;
+                    res = Math.Min(res, notBroken + 1);
+                }
+                else
+                {
+                    //找到对应位置
+                    left = right = mid;
+                    res = Math.Min(res, broken + 1);
+                    break;
+                }
+            }
+            memo[key] = res;
+            return res;
+        }
+    }
+    #endregion
     //如果不限制鸡蛋个数，二分法即可
     public int SuperEggDrop(int k, int n)
     {
-        return dp(k, n);
+        // return dp(k, n);//递归+记忆动态规划超时
+        // return _DpHalfSearch(k, n); //二分法优化线性搜索超时
     }
 }
 // @lc code=end
