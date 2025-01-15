@@ -41,7 +41,7 @@ public class Solution
     }
     #endregion
 
-    //二分法优化线性搜索超时
+    //二分法优化线性搜索
     #region 
     //利用二分法代替线性搜索
     public int _DpHalfSearch(int k, int n)
@@ -86,11 +86,28 @@ public class Solution
         }
     }
     #endregion
+
     //如果不限制鸡蛋个数，二分法即可
     public int SuperEggDrop(int k, int n)
     {
         // return dp(k, n);//递归+记忆动态规划超时
-        return _DpHalfSearch(k, n); //二分法优化线性搜索
+        // return _DpHalfSearch(k, n); //二分法优化线性搜索
+        //修改dp数组的定义
+        //dp[k,n]表示k个鸡蛋，最多允许扔n次，最多能够确定的楼层数
+        int[,] dp = new int[k + 1, n + 1]; //初始化为0
+        int ret = 0;
+        while (dp[k, ret] < n)
+        {
+            ret += 1;
+            //穷举所有可能的鸡蛋个数
+            for (int i = 1; i <= k; i++)
+            {
+                //dp[i,ret-1]表示鸡蛋没碎，可以确定的楼层数
+                //dp[i-1,ret-1]表示鸡蛋碎了，可以确定的楼层数
+                dp[i, ret] = dp[i, ret - 1] + dp[i - 1, ret - 1] + 1;
+            }
+        }
+        return ret;
     }
 }
 // @lc code=end
