@@ -61,8 +61,8 @@ public class Solution
             while (left <= right)
             {
                 int mid = left + (right - left) / 2; //防止溢出
-                int broken = dp(k - 1, mid - 1); //碎了
-                int notBroken = dp(k, n - mid); //没碎
+                int broken = _DpHalfSearch(k - 1, mid - 1); //碎了
+                int notBroken = _DpHalfSearch(k, n - mid); //没碎
                 if (broken > notBroken)//两函数交点在mid左边
                 {
                     right = mid - 1;
@@ -90,7 +90,7 @@ public class Solution
     public int SuperEggDrop(int k, int n)
     {
         // return dp(k, n);//递归+记忆动态规划超时
-        // return _DpHalfSearch(k, n); //二分法优化线性搜索超时
+        return _DpHalfSearch(k, n); //二分法优化线性搜索
     }
 }
 // @lc code=end
