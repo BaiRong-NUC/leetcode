@@ -37,7 +37,7 @@ Console.WriteLine("-----------------");
 
 //将栈的数字放到数组中
 string[] strs2 = new string[stack.Count * 2];
-//CopyTo方法 参数1：数组 参数2：从数组的第几个位置开始放
+//CopyTo方法 参数1：数组 参数2：从数组的第几个位置开始放.顺序为出栈顺序
 stack.CopyTo(strs2, stack.Count);
 
 for (int i = 0; i < strs2.Length; i++)
