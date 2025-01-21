@@ -48,8 +48,8 @@ public class Solution
         {
             for (int j = 0; j <= target; j++)
             {
-                // 第i个物品的重量为nums[i-1]大于j，一定不能选择
-                if (j - nums[i - 1] < 0)
+                // 第i个物品的重量为nums[i-1]大于j，一定不能选择。此外，dp[i-1,j-nums[i-1]]<0表示没有办法使用i-1个物品凑出j-nums[i-1]，所以也不能选择
+                if (j - nums[i - 1] < 0 || dp[i - 1, j - nums[i - 1]] < 0)
                     dp[i, j] = dp[i - 1, j];
                 else
                     //可以选，可以不选
