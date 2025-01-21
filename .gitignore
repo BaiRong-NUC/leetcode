@@ -1,7 +1,7 @@
 # 忽视路径下的文件夹下的变化
-CSharpDebug\bin
+CSharpDebug\bin\
 
-CSharpDebug\obj
+CSharpDebug\obj\
 
 # 忽视文件变化
 CSharpDebug\CSharpDebug.csproj
