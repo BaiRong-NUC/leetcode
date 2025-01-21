@@ -5,27 +5,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "java",
-      "name": "Launch tree",
-      "request": "launch",
-      "mainClass": "tree",
-      "projectName": "DataStructure_6c6070cf"
-    },
-    {
-      "type": "java",
-      "name": "Launch KMP",
-      "request": "launch",
-      "mainClass": "KMP",
-      "projectName": "DataStructure_6c6070cf"
-    },
-    {
-      "type": "java",
-      "name": "Launch SolveJava",
-      "request": "launch",
-      "mainClass": "SolveJava",
-      "projectName": "vscode_59a0ce4"
-    },
-    {
       "name": "(gdb) Launch",
       "preLaunchTask": "g++.exe build active file",
       "type": "cppdbg",
