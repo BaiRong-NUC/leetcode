@@ -1,6 +1,5 @@
-# 忽视文件变化
-./CSharpDebug/bin
-
-./CSharpDebug/obj
-
-CSharpDebug.csproj
+CSharpDebug/obj/CSharpDebug.csproj.nuget.dgspec.json
+CSharpDebug/obj/Debug/net8.0/CSharpDebug.AssemblyInfoInputs.cache
+CSharpDebug/obj/CSharpDebug.csproj.nuget.dgspec.json
+CSharpDebug/obj/project.nuget.cache
+CSharpDebug/obj/Debug/net8.0/CSharpDebug.AssemblyInfo.cs
