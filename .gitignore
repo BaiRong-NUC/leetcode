@@ -1,7 +1,25 @@
-# 忽视路径下的文件夹下的变化
-CSharpDebug\bin\
-
-CSharpDebug\obj\
-
 # 忽视文件变化
 CSharpDebug\CSharpDebug.csproj
+CSharpDebug\bin\Debug\net8.0\CSharpDebug.deps.json
+CSharpDebug\bin\Debug\net8.0\CSharpDebug.dll
+CSharpDebug\bin\Debug\net8.0\CSharpDebug.exe
+CSharpDebug\bin\Debug\net8.0\CSharpDebug.pdb
+CSharpDebug\bin\Debug\net8.0\CSharpDebug.runtimeconfig.json
+CSharpDebug\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+CSharpDebug\obj\Debug\net8.0\apphost.exe
+CSharpDebug\obj\Debug\net8.0\CSharpDebug.AssemblyInfo.cs
+CSharpDebug\obj\Debug\net8.0\CSharpDebug.AssemblyInfoInputs.cache
+CSharpDebug\obj\Debug\net8.0\CSharpDebug.assets.cache
+CSharpDebug\obj\Debug\net8.0\CSharpDebug.csproj.CoreCompileInputs.cache
+CSharpDebug\obj\Debug\net8.0\CSharpDebug.csproj.FileListAbsolute.txt
+CSharpDebug\obj\Debug\net8.0\CSharpDebug.dll
+CSharpDebug\obj\Debug\net8.0\CSharpDebug.GeneratedMSBuildEditorConfig.editorconfig
+CSharpDebug\obj\Debug\net8.0\CSharpDebug.genruntimeconfig.cache
+CSharpDebug\obj\Debug\net8.0\CSharpDebug.GlobalUsings.g.cs
+CSharpDebug\obj\Debug\net8.0\CSharpDebug.pdb
+CSharpDebug\obj\CSharpDebug.csproj.nuget.dgspec.json
+CSharpDebug\obj\CSharpDebug.csproj.nuget.g.props
+CSharpDebug\obj\CSharpDebug.csproj.nuget.g.targets
+CSharpDebug\obj\project.assets.json
+CSharpDebug\obj\project.nuget.cache
+CSharpDebug\obj\CSharpDebug.csproj.nuget.g.targets
