@@ -1,6 +1,6 @@
 # 忽视文件变化
-CSharpDebug/bin/
+./CSharpDebug/bin
 
-CSharpDebug/obj/
+./CSharpDebug/obj
 
 CSharpDebug.csproj
