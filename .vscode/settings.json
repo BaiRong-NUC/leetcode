@@ -77,5 +77,6 @@
     "valarray": "cpp",
     "stack": "cpp",
     "strstream": "cpp"
-  }
+  },
+  "dotnet.defaultSolution": "CSharpDebug.sln"
 }
