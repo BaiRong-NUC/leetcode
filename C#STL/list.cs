@@ -52,6 +52,12 @@ Console.WriteLine(sortedNumbers.BinarySearch(5));
 List<string> names = new List<string> { "Alice", "Bob", "Charlie", "David" };
 
 // 创建一个自定义比较器，用于按字符串长度进行比较
+/**
+x.Length.CompareTo(y.Length)会比较x和y的长度
+如果x的长度小于y的长度，返回一个负数。
+如果x的长度等于y的长度，返回0。
+如果x的长度大于y的长度，返回一个正数。（True) 交换元素的值
+*/
 IComparer<string> lengthComparer = Comparer<string>.Create((x, y) => x.Length.CompareTo(y.Length));
 //搜索长度为4的字符串
 //如果未找到，它返回一个负数，该负数是大于item的第一个元素的索引的按位求补。可以使用按位求补运算符~来获取应插入元素的位置。
@@ -63,4 +69,21 @@ if (index >= 0)
 else
 {
     Console.WriteLine($"未找到长度为4的字符串,插入位置为{~index}");
+}
+
+Console.WriteLine("-----------------");
+
+//排序
+// sortedNumbers.Sort();
+//自定义排序
+sortedNumbers.Sort((x, y) => y.CompareTo(x));
+foreach (var item in sortedNumbers)
+{
+    Console.WriteLine(item);
+}
+
+names.Sort(lengthComparer);
+foreach (var item in names)
+{
+    Console.WriteLine(item);
 }
