@@ -57,9 +57,11 @@ export class PrintCur {
         this.dfs(root, ret, 0, (col - 1) / 2, treeDeep);
         for (let i = 0; i < ret.length; i++) {
             for (let j = 0; j < ret[i].length; j++) {
-                console.log(ret[i][j] + " ", { end: '' });
+                // console.log(ret[i][j] + " ", { end: '' });
+                process.stdout.write(ret[i][j] + " ");
             }
-            console.log("\n", { end: '' });
+            // console.log("\n", { end: '' });
+            process.stdout.write("\n");
         }
         return ret;
     }
@@ -67,9 +69,11 @@ export class PrintCur {
     // 打印一维数组
     printVecter(buff: number[]): void {
         for (const num of buff) {
-            console.log(num + " ", { end: '' });
+            // console.log(num + " ", { end: '' });
+            process.stdout.write(num + " ");
         }
-        console.log("\n", { end: '' });
+        // console.log("\n", { end: '' });
+        process.stdout.write("\n");
     }
 
     // 打印二维数组
@@ -82,9 +86,11 @@ export class PrintCur {
     // 打印链表
     printList(head: ListNode | null): void {
         while (head !== null) {
-            console.log(head.val + " ", { end: '' });
+            // console.log(head.val + " ", { end: '' });
+            process.stdout.write(head.val + " ");
             head = head.next;
         }
-        console.log("\n", { end: '' });
+        // console.log("\n", { end: '' });
+        process.stdout.write("\n");
     }
 }
