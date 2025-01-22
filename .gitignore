@@ -12,3 +12,6 @@ CSharpDebug/obj/Debug/net8.0/CSharpDebug.GeneratedMSBuildEditorConfig.editorconf
 CSharpDebug/obj/Debug/net8.0/CSharpDebug.pdb
 CSharpDebug/obj/Debug/net8.0/ref/CSharpDebug.dll
 CSharpDebug/obj/Debug/net8.0/refint/CSharpDebug.dll
+node_modules/
+package-lock.json
+package.json
