@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(gdb) Launch",
+      "name": "Debug C++",
       "preLaunchTask": "g++.exe build active file",
       "type": "cppdbg",
       "request": "launch",
