@@ -78,5 +78,6 @@
     "stack": "cpp",
     "strstream": "cpp"
   },
-  "dotnet.defaultSolution": "CSharpDebug.sln"
+  "dotnet.defaultSolution": "CSharpDebug.sln",
+  "marscode.chatLanguage": "cn"
 }
