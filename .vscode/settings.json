@@ -79,5 +79,9 @@
     "strstream": "cpp"
   },
   "dotnet.defaultSolution": "CSharpDebug.sln",
-  "marscode.chatLanguage": "cn"
+  "marscode.chatLanguage": "cn",
+  "marscode.codeCompletionPro": {
+    "enableCodeCompletionPro": true
+  },
+  "marscode.enableInlineCommand": true
 }
