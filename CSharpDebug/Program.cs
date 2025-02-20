@@ -5,9 +5,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Debug Start");
-        Solution solution = new Solution();
-        Console.WriteLine(solution.LengthOfLongestSubsequence(new List<int> { 1, 1, 5, 4, 5 }, 3));
-        Console.WriteLine("Debug End");
+        LRUCache lRUCache = new LRUCache(2);
+        lRUCache.Put(2, 6); 
+        lRUCache.Put(1, 5); 
+        Console.WriteLine(lRUCache.Get(1));    
+        lRUCache.Put(1, 2); 
+        Console.WriteLine(lRUCache.Get(1));    
     }
 }
