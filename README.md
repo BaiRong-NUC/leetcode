@@ -8,6 +8,8 @@
 
 2025 年 1 月 20 日，添加了 LeetCode TypeScript 运行调试环境
 
+2025 年 4 月 21 日，考研上岸，开始 26 数据结构授课兼职，创建目录./数据结构为授课代码
+
 我的 LeetCode 个人主页：
 
 https://leetcode.cn/u/dodamce/
