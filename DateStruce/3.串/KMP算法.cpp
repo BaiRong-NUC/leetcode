@@ -55,7 +55,7 @@ void Next(const string &dst, vector<int> &next)
     next[0] = -1;
     int k = -1;
     int j = 0;
-    while (j < dst.length())
+    while (j < dst.length() - 1)
     {
         if (k == -1 || dst[j] == dst[k])
         {
