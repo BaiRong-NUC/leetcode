@@ -12,6 +12,8 @@
 
 2025 年 4 月 23 日，./数据结构目录和生成的可执行程序，移动到其他仓库
 
+2025 年 4 月 27 日，将./数据结构重命名为./DateStruce
+
 我的 LeetCode 个人主页：
 
 https://leetcode.cn/u/dodamce/
