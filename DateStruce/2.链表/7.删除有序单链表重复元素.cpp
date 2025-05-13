@@ -37,10 +37,36 @@ ListNode *CreateListNodeByArray(ElemType arr[], int n)
     return listNode;
 }
 
+void delSameListNode(ListNode *head)
+{
+    if (head == nullptr || head->next == nullptr)
+        return;
+    ListNode *prev = head->next;
+    ListNode *cur = prev->next;
+    while (cur != nullptr)
+    {
+        ListNode *next = cur->next;
+        if (cur->data == prev->data)
+        {
+            // 删除cur节点
+            prev->next = next;
+            delete cur;
+            cur = next;
+        }
+        else
+        {
+            prev = cur;
+            cur = next;
+        }
+    }
+}
+
 int main(int argc, char const *argv[])
 {
-    int array[] = {1, 2, 3, 3, 4, 4, 5};
+    int array[] = {1, 1};
     ListNode *head = CreateListNodeByArray(array, sizeof(array) / sizeof(int));
+    PrintList(head);
+    delSameListNode(head);
     PrintList(head);
     return 0;
 }
