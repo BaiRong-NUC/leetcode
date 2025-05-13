@@ -24,8 +24,20 @@ struct ListNode
 {
     int val;
     ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+    ListNode(int x) : val(x), next(nullptr) {};
 };
+
+ListNode *CreateListNodeByArray(vector<int> &array)
+{
+    ListNode *head = new ListNode(0); // 创建一个头节点，值为0
+    ListNode *cur = head;             // 创建一个指针，指向头节点
+    for (int i = 0; i < array.size(); i++)
+    {                                               // 遍历数组
+        ListNode *newNode = new ListNode(array[i]); // 创建一个新节点，值为数组中的元素
+        cur->next = newNode;                        // 将新节点插入到链表中
+        cur = cur->next;                            // 将指针移到新节点
+    }
+}
 
 // 二叉树打印函数方便测试
 class PrintCur
