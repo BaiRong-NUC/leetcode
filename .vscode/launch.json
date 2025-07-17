@@ -9,14 +9,16 @@
       "preLaunchTask": "g++.exe build active file",
       "type": "cppdbg",
       "request": "launch",
-      "program": "D:\\CppCode\\leetcode\\leetcode_exe_debug\\${fileBasenameNoExtension}.exe",
+      // "program": "D:\\CppCode\\leetcode\\leetcode_exe_debug\\${fileBasenameNoExtension}.exe",
+      "program": "D:\\C++\\LeetCode\\leetcode_exe_debug\\${fileBasenameNoExtension}.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
-      "miDebuggerPath": "C:\\MinGW\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
+      // "miDebuggerPath": "C:\\MinGW\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe","../MinGW/bin/g++.exe"
+      "miDebuggerPath": "D:\\C++\\MinGW\\bin\\gdb.exe",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
