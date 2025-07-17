@@ -83,5 +83,9 @@
   "marscode.codeCompletionPro": {
     "enableCodeCompletionPro": true
   },
-  "marscode.enableInlineCommand": true
+  "marscode.enableInlineCommand": true,
+  "cSpell.words": [
+    "ltag",
+    "rtag"
+  ]
 }
