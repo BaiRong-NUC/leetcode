@@ -1,7 +1,7 @@
 {
   "code-runner.executorMap": {
-    "c": "cd $dir && gcc $fileName -o D:\\C++\\LeetCode\\leetcode_exe_debug\\$fileNameWithoutExt.exe && D:\\C++\\LeetCode\\leetcode_exe_debug\\$fileNameWithoutExt.exe ",
-    "cpp": "cd $dir && g++ $fileName -o D:\\C++\\LeetCode\\leetcode_exe_debug\\$fileNameWithoutExt.exe && D:\\C++\\LeetCode\\leetcode_exe_debug\\$fileNameWithoutExt.exe ",
+    "c": "cd $dir && gcc $fileName -fexec-charset=GBK -o D:\\C++\\LeetCode\\leetcode_exe_debug\\$fileNameWithoutExt.exe && D:\\C++\\LeetCode\\leetcode_exe_debug\\$fileNameWithoutExt.exe ",
+    "cpp": "cd $dir && g++ $fileName -fexec-charset=GBK -o D:\\C++\\LeetCode\\leetcode_exe_debug\\$fileNameWithoutExt.exe && D:\\C++\\LeetCode\\leetcode_exe_debug\\$fileNameWithoutExt.exe ",
   },
   "files.associations": {
     "array": "cpp",
